@@ -113,12 +113,12 @@ https://sub.id9.cc
 https://sub.maoxiongnet.com
 EOF`
 	Config=`sed -n ""$rule_link"p"<<EOF
-https://github.com/juewuy/ShellClash/raw/master/rules/ShellClash.ini
-https://github.com/juewuy/ShellClash/raw/master/rules/ShellClash_Mini.ini
-https://github.com/juewuy/ShellClash/raw/master/rules/ShellClash_Block.ini
-https://github.com/juewuy/ShellClash/raw/master/rules/ShellClash_Nano.ini
-https://github.com/juewuy/ShellClash/raw/master/rules/ShellClash_Full.ini
-https://github.com/juewuy/ShellClash/raw/master/rules/ShellClash_Full_Block.ini
+https://github.com/Skyscrapers-xzx/ShellClash/raw/master/rules/ShellClash.ini
+https://github.com/Skyscrapers-xzx/ShellClash/raw/master/rules/ShellClash_Mini.ini
+https://github.com/Skyscrapers-xzx/ShellClash/raw/master/rules/ShellClash_Block.ini
+https://github.com/Skyscrapers-xzx/ShellClash/raw/master/rules/ShellClash_Nano.ini
+https://github.com/Skyscrapers-xzx/ShellClash/raw/master/rules/ShellClash_Full.ini
+https://github.com/Skyscrapers-xzx/ShellClash/raw/master/rules/ShellClash_Full_Block.ini
 https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/lhie1_clash.ini
 https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/lhie1_dler.ini
 https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/connershua_pro.ini
@@ -127,9 +127,9 @@ https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/ra
 https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RemoteConfig/special/basic.ini
 https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RemoteConfig/special/netease.ini
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_Google.ini
-https://github.com/juewuy/ShellClash/raw/master/rules/ACL4SSR_Online_Games.ini
-https://github.com/juewuy/ShellClash/raw/master/rules/ACL4SSR_Online_Mini_Games.ini
-https://github.com/juewuy/ShellClash/raw/master/rules/ACL4SSR_Online_Full_Games.ini
+https://github.com/Skyscrapers-xzx/ShellClash/raw/master/rules/ACL4SSR_Online_Games.ini
+https://github.com/Skyscrapers-xzx/ShellClash/raw/master/rules/ACL4SSR_Online_Mini_Games.ini
+https://github.com/Skyscrapers-xzx/ShellClash/raw/master/rules/ACL4SSR_Online_Full_Games.ini
 EOF`
 	Https=$(echo ${Https//\%26/\&})   #将%26替换回&
 	#如果传来的是Url链接则合成Https链接，否则直接使用Https链接
@@ -881,7 +881,7 @@ bfstart(){
 	#读取配置文件
 	getconfig
 	[ ! -d $bindir/ui ] && mkdir -p $bindir/ui
-	update_url=https://ghproxy.com/https://raw.githubusercontent.com/juewuy/ShellClash/master
+	update_url=https://ghproxy.com/https://raw.githubusercontent.com/Skyscrapers-xzx/ShellClash/master
 	#检查clash核心
 	if [ ! -f $bindir/clash ];then
 		if [ -f $clashdir/clash ];then
